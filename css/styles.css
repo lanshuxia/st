@@ -1,0 +1,92 @@
+/* CSS Document */
+*{ padding:0; margin:0;box-sizing: border-box}
+body{font-size:0}
+body,html{
+    height:100%;
+}
+.banner{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:relative;
+    font-size:0;
+}
+.b-img{
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.gradientsTop{
+    width:100%;
+    height:150px;
+    position:fixed;
+    top:0;
+    background: -moz-linear-gradient(top,rgba(0,0,0,0.2),rgba(0,0,0,0));
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0.2),rgba(0,0,0,0));
+    background: -o-linear-gradient(top,rgba(0,0,0,0.2),rgba(0,0,0,0));
+}
+.gradientsBottom{
+    width:100%;
+    height:150px;
+    position:fixed;
+    bottom:0;
+    background: -moz-linear-gradient(bottom,rgba(0,0,0,0.2),rgba(0,0,0,0));
+    background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.2),rgba(0,0,0,0));
+    background: -o-linear-gradient(bottom,rgba(0,0,0,0.2),rgba(0,0,0,0));
+}
+.b-img a{
+    display:block;
+    height:100%;
+    float:left;
+    background-size: 100%;
+}
+.bar-left{
+    position:absolute;
+    z-index:1;
+    display:block;
+    width:100px;
+    height:100%;
+    left:0px;
+    background:none;
+    top:0px;
+}
+.bar-right{
+    position:absolute;
+    z-index:1;
+    display:block;
+    width:100px;
+    height:100%;
+    right:0px;
+    background:none;
+    top:0px;
+}
+.bar-left em{
+    display:block;
+    width:70px;
+    height:132px;
+    background:url(../img/bar-left.png) 0px 0px no-repeat;
+    background-size: cover;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto auto;
+}
+.bar-right em{
+    display:block;
+    width:70px;
+    height:132px;
+    background:url(../img/bar-right.png) -2px 0px no-repeat;
+    background-size: cover;
+    position:absolute;left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    margin:auto auto;
+}
+/*
+.bar-left .emcss{ background-position:0px -100px;}
+.bar-right .emcss{ background-position:-50px -100px;}*/
+

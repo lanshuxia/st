@@ -1,0 +1,117 @@
+@import "common.css";
+@import "public.css";
+@import "iconfont.css";
+/*展览设计-开始*/
+.panel{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    display: none;
+}
+.panel.active{
+    display: block;
+}
+.panel-item{
+    height:auto;
+    overflow: hidden;
+}
+.panel-header{
+    width:100%;
+    height:30px;
+    margin:30px 0 15px 0;
+}
+.panel-header-left{
+    height:100%;
+    float: left;
+    font-family: DINPRO-BOLD, sans-serif;
+}
+.panel-header-right{
+    height:100%;
+    float: right;
+}
+.panel-header-right li{
+    float: left;
+    font-family: DINPRO-BOLD,"微软雅黑" ,sans-serif;
+    margin-left:30px;
+}
+.panel-header-right li.panen-header-item{
+    margin-left:50px;
+}
+.panel-con{
+    height:auto;
+    overflow: hidden;
+    animation: all 0.2s;
+}
+.panel-con li{
+    width:6.66%;
+    height:50px;
+    border-left:1px solid #fff;
+    border-bottom:1px solid #fff;
+    float: left;
+}
+.panel-con li a{
+    display: block;
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.panel-con li a img{
+    width:100%;
+    height:100%;
+    display: block;
+}
+.imgbg{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.imgbg:hover{
+    width:100%;
+    height:100%;
+    background: url(../img/imgbg.png) no-repeat top;
+    background-size: contain;
+}
+#tooltip{
+    background: #000;
+    position:absolute;
+    z-index:999;
+    padding:3px;
+    color:#fff;
+    display:none;
+}
+/*展览设计-结束*/
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .panel-con li{
+        width:8.33%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .panel-con li{
+        width:11.11%;
+    }
+}
+@media (max-width:767px){
+    .index-content-right{
+        top:0.9rem;
+    }
+    .panel-header{
+        height:0.45rem;
+        margin:0.3rem 0 0.15rem 0;
+    }
+    .panel-header-left{
+        font-size:0.3rem;
+    }
+    .panel-header-right li{
+        margin-left:0.3rem;
+    }
+    .panel-header-right li.panen-header-item{
+        margin-left:0.5rem;
+    }
+    .panel-con li{
+        width:20%;
+        height:0.73rem;
+    }
+}

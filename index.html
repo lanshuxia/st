@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+
+    <title>ST首页</title>
+</head>
+<body>
+<div class="index-con">
+    <!--public-header-start-->
+    <div class="index-header">
+        <div class="public-header">
+            <div class="public-nav"></div>
+            <div class="public-search">
+                <form>
+                    <span>
+                        <input class="search-input" placeholder="请输入搜索的内容" type="text" >
+                    </span>
+                    <p class="search-img"></p>
+                </form>
+                <div class="close"></div>
+                <div class="result-container"></div>
+            </div>
+            <a href="index.html"><div class="public-logo"></div></a>
+        </div>
+    </div>
+    <!--public-header-end-->
+
+    <!--index-content-left-start-->
+    <div class="index-content-left">
+        <div class="index-close"></div>
+        <div class="index-nav-title"><img src="img/nav-title.png" alt=""></div>
+        <div class="index-nav">
+            <a href="works.html"><img src="img/nav1.png" alt=""></a>
+            <a href="about.html"><img src="img/nav2.png" alt=""></a>
+            <a href="view.html"><img src="img/nav3.png" alt=""></a>
+            <a href="#"><img src="img/nav4.png" alt=""></a>
+            <a href="#" class="nav6"><img src="img/nav6.png" alt=""></a>
+            <a href="#"><img src="img/nav5.png" alt=""></a>
+        </div>
+        <div class="index-nav-switch">
+            <a href="">
+                <img src="img/switch-z.png" alt="">
+            </a>
+            <span><img src="img/switch.png" alt=""></span>
+            <a href=""><img src="img/switch-e.png" alt=""></a>
+        </div>
+        <div class="index-nav-footer icon_lists">
+            <div class="index-public">
+                <a href=""><i class="icon iconfont">&#xe61f;</i></a>
+                <a href=""><i class="icon iconfont">&#xe649;</i></a>
+                <a href=""><i class="icon iconfont">&#xe606;</i></a>
+                <a href=""><i class="icon iconfont">&#xe655;</i></a>
+            </div>
+            <div class="index-public">
+                <a href=""><i class="icon iconfont">&#xe79a;</i></a>
+                <a href=""><i class="icon iconfont">&#xe71e;</i></a>
+                <a href=""><i class="icon iconfont">&#xe614;</i></a>
+                <a href=""><i class="icon iconfont">&#xe602;</i></a>
+            </div>
+        </div>
+    </div>
+    <!--index-content-left-end-->
+
+    <!--index-content-right-start-->
+    <div class="index-content-right">
+        <div class="content-right">
+            <marquee behavior="" direction="left" scrollamount="100">SenseTeam Ganguan·Shanheshui is an independent and comprehensive creative company, focusing on the integration of creative technologies in various areas. It provides multiple solutions for clients, by advertising, graphic design, space and digital communication. The team aims not only to provide all-around services for clients but also to create values for social.</marquee>
+        </div>
+    </div>
+    <!--index-content-right-start-->
+</div>
+</body>
+<!--<script>
+    /*点击按钮*/
+    var publicNav = document.getElementsByClassName("public-nav")[0];
+    var contentLeft = document.getElementsByClassName("index-content-left")[0];
+    var contentRight = document.getElementsByClassName("index-content-right")[0];
+    var list = document.getElementsByTagName("opinion-list-con ul")[0];
+    var close = document.getElementsByClassName("index-close")[0];
+    var mainContainer=document.getElementsByClassName("main-container")[0];
+    /*
+     * publicNav-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;click
+     * */
+    publicNav.onclick = function(){
+        contentLeft.style.cssText = "margin-right:-33.3%;display:block;";
+        contentRight.style.cssText = "margin-left:33.3%";
+    }
+    /*
+     * close-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;click
+     * */
+    close.onclick = function(){
+        contentLeft.style.cssText = "margin-right:0;display:none";
+        contentRight.style.cssText = "margin-left:0"
+    }
+</script>-->
+
+</html>
+
+
+

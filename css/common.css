@@ -1,0 +1,55 @@
+body,p,ul,ol,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,input,td,tr,th,table,hr{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    color:#000;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'DINPRO-BOLD';
+    /*src: url('../font/NOTOSANSHANS-THIN_1.eot') format('eot');!*IE9*!
+    src: url('../font/NOTOSANSHANS-THIN_1.OTF') format('otf');
+    src: url('../font/NOTOSANSHANS-THIN_1.eot') format('embedded-opentype');!*IE6-IE8*!
+    src: url('../font/NOTOSANSHANS-THIN_1.ttf') format('truetype');!*chrome, firefox, opera, Safari, Android, iOS 4.2+*!*/
+    src: url('../font/DINPRO-BOLD.OTF') format('woff');/*chrome, firefox*/
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINPRO-BLACK';
+    /*src: url('../font/NOTOSANSHANS-THIN_1.eot') format('eot');!*IE9*!
+    src: url('../font/NOTOSANSHANS-THIN_1.OTF') format('otf');
+    src: url('../font/NOTOSANSHANS-THIN_1.eot') format('embedded-opentype');!*IE6-IE8*!
+    src: url('../font/NOTOSANSHANS-THIN_1.ttf') format('truetype');!*chrome, firefox, opera, Safari, Android, iOS 4.2+*!*/
+    src: url('../font/DINPRO-BLACK.OTF') format('woff');/*chrome, firefox*/
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+@font-face {
+    font-family: 'FE4';
+    src: url('../font/NOTOSANSHANS-THIN_1.eot') format('eot');!*IE9*!
+    src: url('../font/NOTOSANSHANS-THIN_1.OTF') format('otf');
+    src: url('../font/NOTOSANSHANS-THIN_1.eot') format('embedded-opentype');!*IE6-IE8*!
+    src: url('../font/NOTOSANSHANS-THIN_1.ttf') format('truetype');!*chrome, firefox, opera, Safari, Android, iOS 4.2+*!
+    src: url('../font/NOTOSANSHANS-THIN_1.woff') format('woff');!*chrome, firefox*!
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FE5';
+    src: url('../font/NotoSansHans-Medium.eot') format('eot');!*IE9*!
+    src: url('../font/NotoSansHans-Medium.otf') format('otf');
+    src: url('../font/NotoSansHans-Medium.eot') format('embedded-opentype');!*IE6-IE8*!
+    src: url('../font/NotoSansHans-Medium.ttf') format('truetype');!*chrome, firefox, opera, Safari, Android, iOS 4.2+*!
+    src: url('../font/NotoSansHans-Medium.woff') format('woff');!*chrome, firefox*!
+    font-weight: normal;
+    font-style: normal;
+}*/

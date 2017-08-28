@@ -1,0 +1,209 @@
+@import "public.css";
+@import "common.css";
+@import "iconfont.css";
+.project{
+    padding: 0 30px 20px 30px;
+}
+.container-con{
+    width:100%;
+    height:100%;
+}
+.container-box{
+    width:100%;
+    height:100%;
+    display: none;
+}
+.active{
+    display: block;
+}
+.container{
+    position:relative;
+    width:100%;
+    margin:0 auto;
+    padding:0 30px 0 30px;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease;
+}
+/* filters */
+#filters{
+    width:100%;
+    padding:0;
+    font-family: DINPRO-BOLD, 微软雅黑, sans-serif;
+    font-size:12px;
+    list-style:none;
+}
+#filters li{
+    float:left;
+}
+#filters li span{
+    display:block;
+    padding:5px 20px;
+    text-decoration:none;
+    color:#666;
+    cursor:pointer;
+}
+#filters li span.active{
+    color:#000;
+}
+/*图片*/
+.portfoliolist{
+    height:auto;
+    margin-left:-15px;
+}
+.portfoliolist .portfolio{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    width:33.3%;
+    padding-left:15px;
+    padding-bottom:15px;
+    display:none;
+    float:left;
+    overflow:hidden;
+}
+.portfoliolist .aa{
+    width:66.6%;
+}
+.portfoliolist .bb{
+    width:33.2%;
+    float:right;
+}
+.portfoliolist .cc{
+    width:33.2%;
+}
+.clear{
+    clear:both;
+}
+.portfolio-wrapper{
+    overflow:hidden;
+    position:relative!important;
+    cursor:pointer;
+}
+.portfolio img{
+    max-width:100%;
+    position:relative;
+}
+.portfolio .label{
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding:15px;
+    background: #000;
+    left:0;
+}
+.portfolio .label .label-bg{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+.portfolio .label-text{
+    color:#fff;
+    font-size:20px;
+}
+.portfolio .label-text a{
+    color:#fff;
+}
+.text-category{
+    width:100%;
+    display:block;
+    font-size:12px;
+    position:absolute;
+    bottom:0;
+    color:#fff;
+}
+.text-time{
+    float: left;
+    display: block;
+}
+.text-award{
+    display: block;
+    float: right;
+}
+/* #Tablet (Portrait) */
+@media only screen and (min-width:768px) and (max-width:959px){
+    .container{
+        width:768px;
+    }
+}
+
+/*  #Mobile (Portrait) - Note:Design for a width of 320px */
+@media only screen and (max-width:767px){
+    .container{
+        width:95%;
+    }
+
+    #portfoliolist .portfolio{
+        width:48%;
+        margin:1%;
+    }
+}
+
+
+/* #Mobile (Landscape) - Note:Design for a width of 480px */
+@media only screen and (min-width:480px) and (max-width:767px){
+    .container{
+        width:70%;
+    }
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix:before,.clearfix:after,.row:before,.row:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.row:after,.clearfix:after{clear:both;}
+.row,.clearfix{zoom:1;}
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .index-nav a li{
+        font-size:20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .anli-con-panelRight{
+        width:100%;
+    }
+    .anli-con-panelLeft{
+        width:100%;
+    }
+    .anli-con-panelLeft li{
+        width:48%;
+        height:100%;
+        float: left;
+        margin-left:2%;
+        margin-bottom:2.5%;
+    }
+}
+@media (max-width:767px){
+    .index-content-right{
+        top:1.3rem;
+    }
+    .mune,.munechecked{
+        margin-right:0.3rem;
+        font-size:0.2rem;
+    }
+    .anli-con-panel{
+        margin-top:0.2rem;
+    }
+    .anli-con-panelRight{
+        width:100%;
+    }
+    .anli-con-panelRight li{
+        width:100%;
+    }
+    .anli-con-panelLeft{
+        width:100%;
+    }
+    .anli-con-panelLeft li{
+        width:100%;
+        height:100%;
+        float: left;
+        margin-left:2%;
+        margin-bottom:2.5%;
+    }
+
+}
+

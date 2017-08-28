@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index1.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/rem.js"></script>
+    <title>ST首页</title>
+</head>
+<body>
+<div class="index-con">
+    <!--public-header-start-->
+    <div class="index-header">
+        <div class="public-header">
+            <div class="public-nav"></div>
+            <form onsubmit="submitFn(this, event);">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="Type to search" />
+                        <button class="search-icon" onclick="searchToggle(this, event);"></button>
+                    </div>
+                    <span class="close" onclick="searchToggle(this, event);"></span>
+                    <div class="result-container">
+
+                    </div>
+                </div>
+            </form>
+            <a href="index.html"><div class="public-logo"></div></a>
+        </div>
+    </div>
+    <!--public-header-end-->
+
+    <!--index-content-left-start-->
+    <div class="index-content-left">
+        <div class="index-close"></div>
+        <div class="index-nav-title"><img src="img/nav-title.png" alt=""></div>
+        <div class="index-nav">
+            <a href="works.html"><img src="img/nav1.png" alt=""></a>
+            <a href="about.html"><img src="img/nav2.png" alt=""></a>
+            <a href="view.html"><img src="img/nav3.png" alt=""></a>
+            <a href="#"><img src="img/nav4.png" alt=""></a>
+            <a href="#"><img src="img/nav5.png" alt=""></a>
+        </div>
+        <div class="index-nav-switch">
+            <a href="">
+                <img src="img/switch-z.png" alt="">
+            </a>
+            <span><img src="img/switch.png" alt=""></span>
+            <a href=""><img src="img/switch-e.png" alt=""></a>
+        </div>
+        <div class="index-nav-footer icon_lists">
+            <a href=""><i class="icon iconfont">&#xe603;</i></a>
+            <a href=""><i class="icon iconfont">&#xe692;</i></a>
+            <a href=""><i class="icon iconfont">&#xe602;</i></a>
+            <a href=""><i class="icon iconfont">&#xe600;</i></a>
+        </div>
+    </div>
+    <!--index-content-left-end-->
+
+    <!--index-content-right-start-->
+    <div class="index-content-right">
+        <div class="content-right">
+
+        </div>
+    </div>
+    <!--index-content-right-start-->
+</div>
+</body>
+<script>
+    /*点击按钮*/
+    var publicNav = document.getElementsByClassName("public-nav")[0];
+    var contentLeft = document.getElementsByClassName("index-content-left")[0];
+    var contentRight = document.getElementsByClassName("index-content-right")[0];
+    var list = document.getElementsByTagName("opinion-list-con ul")[0];
+    var close = document.getElementsByClassName("index-close")[0];
+    var mainContainer=document.getElementsByClassName("main-container")[0];
+    /*
+     * publicNav---------click
+     * */
+    publicNav.onclick = function(){
+        contentLeft.style.cssText = "margin-right:-33.3%;display:block";
+        contentRight.style.cssText = "margin-left:33.3%";
+    }
+    /*
+     * close---------click
+     * */
+    close.onclick = function(){
+        contentLeft.style.cssText = "margin-right:0;display:none";
+        contentRight.style.cssText = "margin-left:0"
+    }
+</script>
+
+<script type="text/javascript">
+    function searchToggle(obj, evt){
+        var container = $(obj).closest('.search-wrapper');
+        if(!container.hasClass('active')){
+            container.addClass('active');
+            evt.preventDefault();
+        }
+        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+            container.removeClass('active');
+            // clear input
+            container.find('.search-input').val('');
+            // clear and hide result container when we press close
+            container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+        }
+    }
+
+    function submitFn(obj, evt){
+        value = $(obj).find('.search-input').val().trim();
+        _html = "Yup yup! Your search text sounds like this: ";
+        if(!value.length){
+            _html = "Yup yup! Add some text friend :D";
+        }
+        else{
+            _html += "<b>" + value + "</b>";
+        }
+        $(obj).find('.result-container').html('<span>' + _html + '</span>');
+        $(obj).find('.result-container').fadeIn(100);
+
+        evt.preventDefault();
+    }
+</script>
+
+
+</html>
+
+
+

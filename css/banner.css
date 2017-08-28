@@ -1,0 +1,271 @@
+@import "common.css";
+@import "iconfont.css";
+@import "public.css";
+/* 两列右侧自适应布局 */
+.index-header{
+    background: rgba(255,255,255,0);
+}
+.public-header{
+    height:33px;
+}
+.public-nav{
+    width:33px;
+    height:100%;
+    float: left;
+    display: inline-block;
+    background: url(../img/navB.png)no-repeat top left;
+    background-size: contain;
+    margin-right:30px;
+    transition:all .2s;
+    cursor: pointer;
+}
+/*搜索-开始*/
+.public-search{
+    width:400px;
+    height:30px;
+    position:absolute;
+    left:90px;
+}
+
+.public-search span{
+    width:200px;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    border-bottom:3px solid #fff;
+}
+.search-input{
+    width:100%;
+    height:100%;
+    font-size:16px;
+    outline: none;
+    background: rgba(255,255,255,0);
+    position:absolute;
+    top:0;
+    left:0;
+    border:1px solid rgba(255,255,255,0);
+}
+.search-img{
+    width:33px;
+    float: left;
+    height:33px;
+    position:absolute;
+    left:0;
+    background: url(../img/searchB.png) no-repeat top left;
+    background-size: contain;
+}
+.public-search .close{
+    width:700px;
+    height:80px;
+    display: block;
+    position:absolute;
+    left:230px;
+    cursor: pointer;
+}
+/*搜索-结束*/
+.public-logo{
+    height: 100%;
+    float: right;
+    background: url(../img/logoB.png) no-repeat top left;
+    background-size: contain;
+}
+/*public-header-end*/
+.index-con{
+    width: 100%;
+    height: 100%;
+    clear: both;
+    display: inline-block;
+}
+.index-content-right{
+    float:right;
+    width:100%;
+    height: 100%;
+}
+.content-right{
+    height: 100%;
+}
+/*footer*/
+.footer{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    padding:30px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: 990;
+}
+.footer-con{
+    width:100%;
+    height:20px;
+}
+.footer-con-left{
+    height:100%;
+    float: left;
+    font-size:20px;
+    color:#fff;
+}
+.footer-con-left>span{
+    display: block;
+    float: left;
+}
+.footer-con-left>ul{
+    float: left;
+}
+.footer-con-left>ul>li{
+    float: left;
+    margin-left:15px;
+}
+.footer-con-right{
+    height:100%;
+    float: right;
+}
+.footer-con-right a{
+    display: inline-block;
+    height:100%;
+    margin-left:20px;
+}
+.footer-con-right a img{
+    height:100%;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .index-nav a li{
+        font-size:20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .index-nav a li{
+        font-size:20px;
+    }
+    .public-search{
+        width:400px;
+        height:30px;
+        position:absolute;
+        left:90px;
+    }
+    .public-search span{
+        width:200px;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        display:none;
+        border-bottom:3px solid #fff;
+    }
+    .search-input{
+        width:100%;
+        height:100%;
+        outline: none;
+        position:absolute;
+        top:0;
+        left:0;
+        border:1px solid rgba(255,255,255,0);
+    }
+    .public-search .close{
+        width:200px;
+        height:80px;
+        display: block;
+        position:absolute;
+        left:230px;
+        cursor: pointer;
+    }
+}
+@media (max-width:767px){
+    /*index-header*/
+    .index-header{
+        height:1.2rem;
+        padding:0.2rem;
+    }
+    .public-header{
+        height:0.5rem;
+    }
+    .public-nav{
+        width:0.6rem;
+        margin-right:0.3rem;
+    }
+    .public-logo{
+        width:3.2rem;
+    }
+    /*index-content-left*/
+    .index-content-left{
+        width:101%;
+        border:0;
+        padding-left:0.2rem;
+    }
+    .index-close{
+        margin-top:0.2rem;
+        width:0.5rem;
+        height:0.5rem;
+    }
+    .index-nav-title{
+        margin-top:0.92rem;
+        margin-bottom:0.4rem;
+    }
+    .index-nav a{
+        height:0.45rem;
+        margin-bottom:0.3rem;
+    }
+    .index-nav>a.nav6{
+        height:0.05rem;
+    }
+    .index-nav-switch{
+        bottom:25%;
+        height:0.45rem;
+    }
+    .index-nav-footer{
+        bottom:0.2rem;
+        padding-right:0.2rem;
+    }
+    .index-public{
+        height:0.5rem;
+        margin-top:0.5rem;
+        padding-right:0.3rem;
+    }
+    /*index-content-right*/
+
+    /*search*/
+    .search-img{
+        width:0.6rem;
+        float: left;
+        height:0.5rem;
+        position:absolute;
+        left:0;
+
+    }
+    .public-search{
+        width:0.6rem;
+        height:0.5rem;
+        left:1rem;
+        position:absolute;
+    }
+    .public-search span{
+        width:200px;
+        height:100%;
+        position:absolute;
+        top:0.8rem;
+        left:0;
+        display:none;
+        border-bottom:3px solid #fff;
+    }
+    .public-search .close{
+        width:1.5rem;
+        height:0.8rem;
+        position:absolute;
+        left:0.6rem;
+    }
+    /*footer*/
+    .footer{
+        padding:0.2rem;
+    }
+    .footer-con-left{
+        font-size:0.24rem;
+    }
+    .footer-con-left>ul>li{
+        margin-right:0.15rem;
+    }
+}
+
+

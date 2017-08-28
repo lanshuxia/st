@@ -1,0 +1,142 @@
+@import "common.css";
+@import "public.css";
+@import "iconfont.css";
+/*about-start*/
+.about-header{
+    font-size:46px;
+    line-height: normal;
+    font-weight:900;
+    font-family: DINPRO-BLACK,sans-serif;
+}
+.about-header img{
+    height:90px;
+    margin-top:50px;
+    margin-bottom:120px;
+}
+.about-us{
+    height:auto;
+    overflow: hidden;
+    margin-top:60px;
+}
+hr{
+    border:2px solid #000;
+}
+.about-us-con{
+    height:auto;
+    overflow: hidden;
+    margin-left:-30px;
+}
+.about-us-con li{
+    width:33.3%;
+    font-size:14px;
+    line-height: 1.725;
+    letter-spacing: 1px;
+    padding-left:30px;
+    margin-top:15px;
+    text-align: justify;
+    float: left;
+    font-weight: 700;
+}
+.contact-us li{
+    text-align: left;
+}
+.about-us-con li.about-item{
+    height:90px;
+    margin-top:20px;
+}
+.about-us-con li img.about-img{
+    height:100%;
+}
+.about-us-con li img.about-map{
+    width:100%;
+    margin-top:60px;
+}
+/*about-end*/
+/*about-footer-start*/
+.footer{
+    height:auto;
+    overflow: hidden;
+    background: #000;
+    padding:0 30px;
+    color:#fff;
+    font-size:14px;
+  /*  font-family: "Microsoft YaHei UI";*/
+    line-height: 1.725;
+    letter-spacing: 1px;
+}
+.footer-con{
+    height:auto;
+    overflow: hidden;
+}
+.footer-con div{
+    margin:30px 0;
+}
+.footer-con div span{
+    width:10px;
+    display: block;
+    height:2px;
+    margin:15px 0;
+    border:1px solid #fff;
+}
+.footer-con div a{
+    color:#fff;
+    display:block;
+    text-decoration: none;
+}
+.footer-con div p{
+    width:370px;
+}
+.footer-text{
+    color:#fff;
+    float: right;
+    margin:30px 0;
+}
+/*about-footer-end*/
+@media (min-width: 992px) and (max-width: 1200px){
+    /*footer*/
+    .footer{
+        height:410px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /*footer*/
+    .footer{
+        height:380px;
+    }
+
+}
+@media (max-width:767px){
+    .about-header{
+        font-size:0.5rem;
+    }
+    .about-header img{
+        height:0.8rem;
+        margin:0.75rem 0 0.6rem 0;
+    }
+    .about-us{
+        margin-top:0.6rem;
+    }
+    .about-us-con li{
+        width:100%;
+    }
+    .about-us-con li.about-item{
+        height:0.8rem;
+    }
+    .about-us-con li img.about-map{
+        margin-top:0.6rem;
+    }
+    /*footer*/
+    .footer{
+        padding:0 0.2rem;
+    }
+    .footer-con div{
+        margin:0.3rem 0;
+    }
+    .footer-con div p{
+        width:100%;
+        text-align: justify;
+    }
+    .footer-text{
+        float: left;
+    }
+}

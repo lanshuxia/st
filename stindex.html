@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/stindex.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <title>STINDEX</title>
+</head>
+<body>
+<div class="index-con">
+    <!--public-header-start-->
+    <div class="index-header">
+        <div class="public-header">
+            <div class="public-nav"></div>
+            <div class="public-search">
+                <form>
+                    <span>
+                        <input class="search-input" placeholder="请输入搜索的内容" type="text" >
+                    </span>
+                    <p class="search-img"></p>
+                </form>
+                <div class="close"></div>
+                <div class="result-container"></div>
+            </div>
+            <a href="index.html"><div class="public-logo"></div></a>
+        </div>
+    </div>
+    <!--public-header-end-->
+
+    <!--index-content-left-start-->
+    <div class="index-content-left">
+        <div class="index-close"></div>
+        <div class="index-nav-title"><img src="img/nav-title.png" alt=""></div>
+        <div class="index-nav">
+            <a href="works.html"><img src="img/nav1.png" alt=""></a>
+            <a href="about.html"><img src="img/nav2.png" alt=""></a>
+            <a href="view.html"><img src="img/nav3.png" alt=""></a>
+            <a href="#"><img src="img/nav4.png" alt=""></a>
+            <a href="#"  class="nav6"><img src="img/nav6.png" alt=""></a>
+            <a href="#"><img src="img/nav5.png" alt=""></a>
+        </div>
+        <div class="index-nav-switch">
+            <a href="">
+                <img src="img/switch-z.png" alt="">
+            </a>
+            <span><img src="img/switch.png" alt=""></span>
+            <a href=""><img src="img/switch-e.png" alt=""></a>
+        </div>
+        <div class="index-nav-footer icon_lists">
+            <div class="index-public">
+                <a href=""><i class="icon iconfont">&#xe61f;</i></a>
+                <a href=""><i class="icon iconfont">&#xe649;</i></a>
+                <a href=""><i class="icon iconfont">&#xe606;</i></a>
+                <a href=""><i class="icon iconfont">&#xe655;</i></a>
+            </div>
+            <div class="index-public">
+                <a href=""><i class="icon iconfont">&#xe79a;</i></a>
+                <a href=""><i class="icon iconfont">&#xe71e;</i></a>
+                <a href=""><i class="icon iconfont">&#xe614;</i></a>
+                <a href=""><i class="icon iconfont">&#xe602;</i></a>
+            </div>
+        </div>
+    </div>
+    <!--index-content-left-end-->
+
+    <!--index-content-right-start-->
+    <div class="index-content-right">
+        <div class="content-right">
+            <div class="project">
+                <!--anli-con-start-->
+                <div class="anli-con">
+                    <div class="anli-header">
+                        <div class="anli-px">
+                            <p>排序方式</p>
+                            <span><img src="img/sjx.png" alt="" class="anli-sjx"></span>
+                        </div>
+
+                        <ul>
+                            <li class="hot">时间</li>
+                            <li>类型</li>
+                            <li>颜色</li>
+                            <li>奖项</li>
+                        </ul>
+                    </div>
+                    <div class="anli-menu-con">
+                        <div class="anli-menu">
+                            <a href="works.html"><img src="img/st-menu1.png" alt=""></a>
+                            <a href="banner.html"><img src="img/st-menu2.png" alt=""></a>
+                            <a href="st.html"><img src="img/st-menu3.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--anli-con-end-->
+                <!--panel-header-start-->
+                <div class="panel-header">
+                    <ul class="panel-header-right">
+                        <li>
+                            按色调
+                            <span>↑</span>
+                            <span>↓</span>
+                        </li>
+                        <li>
+                            按明度
+                            <span>↑</span>
+                            <span>↓</span>
+                        </li>
+                        <li  class="panen-header-item">[22]</li>
+                    </ul>
+                </div>
+                <!--panel-header-start-->
+                <div class="panel">
+                    <ul class="panel-con panelitem" id="panel-con1"></ul>
+                    <ul class="panelitem" id="panel-con2"></ul>
+                    <ul class="panelitem" id="panel-con3"></ul>
+                    <ul class="panelitem" id="panel-con4"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--index-content-right-start-->
+</div>
+</body>
+<!--<script>
+    $(function(){
+        /*展览设计*/
+        var title=$(".anli-header ul  li");
+        var con=$(".panel li");
+        var onearr=[];
+        var twoarr=[];
+        var threearr=[];
+        var fourarr=[];
+        //放图片
+        for(var i=0;i<38;i++){
+            onearr.push("img/"+i+".jpg");//34
+            twoarr.push("img/"+i+".jpg");//34
+            threearr.push("img/"+i+".jpg");//34
+            fourarr.push("img/"+i+".jpg");//34
+        }
+        //随机取24张图片
+        function random(arr){
+            var newarr=[];//为了不破坏原来的数组
+            for(var i=0;i<100;i++){
+                newarr.push(arr[parseInt(Math.random()*34)]);
+            }
+            return newarr;
+        }
+
+        // alert(random(onearr));
+        var imgarr=[onearr,twoarr,threearr,fourarr];
+        function show(num){
+            var newl=random(imgarr[num]);
+            for(i=0;i<newl.length;i++){
+                var div=document.createElement("div");
+                var img=document.createElement("img");
+                img.src=newl[i];
+                img.style.cssText="width:100%;height:100%;border:1px solid green;"
+                div.appendChild(img);
+                con[num].appendChild(div);
+            }
+        }
+        show(0);
+        var index=0;
+        for(var i=0;i<title.length;i++){
+            title[i].index=i;
+            title[i].flag=true;//开
+            title[0].flag=false;
+            title[i].onclick=function(){
+                index=this.index;
+                for(var j=0;j<con.length;j++){
+                    con[j].style.display="none";
+                    title[j].style.fontWeight="normal";
+                    title[j].style.fontSize="";
+                    title[j].style.textDecoration="none";
+                }
+                title[this.index].style.fontWeight="bold";
+                title[this.index].style.fontSize="14px";
+                title[this.index].style.textDecoration="underline";
+                con[this.index].style.display="block";
+                if(this.flag){
+                    show(this.index);
+                    this.flag=false;
+                }
+            }
+        }
+
+
+        /*hover-&#45;&#45;title*/
+        var x=10;
+        var y=20;
+        $("a.tooltip").mouseover(function(e){
+            this.myTitle=this.title;
+            this.title="";
+            var tooltip="<div id='tooltip'>"+this.myTitle+"</div>";   //创建DIV元素
+            $("#panel-con").append(tooltip); 	//追加到文档中
+            $("#tooltip").css({"top": (e.pageY+y) + "px","left": (e.pageX+x) + "px"}).show();	//设置X  Y坐标， 并且显示
+        }).mouseout(function(){
+            this.title=this.myTitle;
+            $("#tooltip").remove();    //移除
+        }).mousemove(function(e){
+            $("#tooltip").css({"top": (e.pageY+y) + "px","left": (e.pageX+x) + "px"});
+        })
+    })
+</script>-->
+<script>
+    $(function(){
+        $(".anli-header ul li").click(function(){
+            var index = $(this).index();
+            $(".panel ul").removeClass("panel-con").eq(index).addClass("panel-con");
+            $(".anli-header ul li").removeClass("hot").eq(index).addClass("hot");
+        })
+    })
+    /*动态生成图片*/
+    function panel(num,name,obj,titleName){
+        for(var i = 0;i < num;i ++){
+            obj.append("<li>"
+                    +"<a href='javascript:;' title='"+titleName[i]+"' class='tooltip'>"
+                    +"<img src='img/"+name+i+".jpg'/>"
+                    +"<div class='imgbg'>"
+                    +"</div>"
+                    +"</a>"
+                    +"</li>");
+        }
+    }
+    var panelCon1 = $("#panel-con1");
+    var panelCon2 = $("#panel-con2");
+    var panelCon3 = $("#panel-con3");
+    var panelCon4 = $("#panel-con4");
+    var titleName = [
+        "识别系统/导视/多媒体<br/>2017",
+        '识别系统/导视/多媒体<br/>2016',
+        '识别系统/导视/多媒体<br/>2015',
+        '识别系统/导视/多媒体<br/>2014',
+        '识别系统/导视/多媒体<br/>2013',
+        '识别系统/导视/多媒体<br/>2012',
+        '识别系统/导视/多媒体<br/>2011',
+        '识别系统/导视/多媒体<br/>2010',
+        '识别系统/导视/多媒体<br/>2009'
+    ]
+    panel(45,'stl2_',panelCon1,titleName);
+    panel(65,'st_0',panelCon2,titleName);
+    panel(55,'st_0',panelCon3,titleName);
+    panel(46,'st_0',panelCon4,titleName);
+
+    /*hover---title*/
+    var x = 10;
+    var y = 20;
+    $("a.tooltip").mouseover(function (e) {
+        this.myTitle = this.title;
+        this.title = "";
+        var tooltip = "<div id='tooltip'>" + this.myTitle + "</div>";   //创建DIV元素
+        $(".project").append(tooltip); 	//追加到文档中
+        $("#tooltip").css({"top": (e.pageY + y) + "px", "left": (e.pageX + x) + "px"}).show();	//设置X  Y坐标， 并且显示
+    }).mouseout(function () {
+        this.title = this.myTitle;
+        $("#tooltip").remove();    //移除
+    }).mousemove(function (e) {
+        $("#tooltip").css({"top": (e.pageY + y) + "px", "left": (e.pageX + x) + "px"});
+    })
+
+
+</script>
+
+</html>
+
+
